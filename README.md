@@ -19,6 +19,11 @@
  */
 ```
 
+**Clarification**:
+1. After you delete a node from tree, maintain that every node's parent and left sibling's children are filled first.  And the children array doesn't contain any holes.
+2. For tree, print the keys in left view and right view.  For bst, print the values for left view and right view.
+3. For rebalance, always ensure that the left subtree is filled first.   
+
 ### Homework Content
 
 **You don't have to worry about edge cases other than decribed in each section.**
@@ -31,7 +36,7 @@
 
 You will find the input file for stack in `[PROJ_ROOT]/input/tree/[num].txt`.
 
-For each line in the input file for binary search tree:
+For each line in the input file for tree:
 
 1. `c COMMENTS` All comments will begin with `c`.
 2. `t w` Create an empty tree.  Note there will be only one `t` for every file and `t` will always proceed other non-comment commands. ```w``` defines the width of the tree.
